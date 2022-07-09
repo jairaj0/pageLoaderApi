@@ -14,10 +14,9 @@ for (let i = 1; i <= count; i++) {
 }
 
 const perPage = (num = 1) => {
-  let start = num <= 1 ? 0 : ((num - 1) * 10);
   let end = num <= 1 ? 10 : ((num - 1) * 10) + 10;
 
-  return pages.slice(start , end)
+  return pages.slice(0 , end)
 }
 
 
